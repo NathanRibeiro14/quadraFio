@@ -7,34 +7,42 @@ import customBlack from '../../styles/colors'
 //components
 import SearchBar from './components/SearchBar'
 import CardService from './components/ServiceCards';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
+import { ScrollView } from 'react-native';
+
 
 
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Olá, ####</Text> 
+      <Text style={styles.title}>Olá, Raul</Text> 
       <SearchBar />
-      <Text style={styles.texts}>Todos jogos completos  </Text>
-      <Text style={styles.texts}>Jogos recentes: </Text>
+      <Text style={styles.texts}>Resultados dos últimos jogos do JUI temporada 2025  </Text>
       <View style={styles.cardsContainer}>
         <View style={styles.row}>
           <CardService iconName="football-outline" iconSize={60} iconColor={customBlack} serviceName="Futsal"/>
           <CardService iconName="basketball" iconSize={60} iconColor={customBlack} serviceName="Basquete"/>
         </View>
+
+        <View style={styles.resultsContainer}>
+          <Text style={styles.resultsTitle}>Últimos Resultados</Text>
+          <ScrollView showsVerticalScrollIndicator={true}>
+            <Text style={styles.resultsText}>Raposada 3 x 2 Castores</Text>
+            <Text style={styles.resultsText}>Forasteiros 2 x 2 Aguias</Text>
+            <Text style={styles.resultsText}>Medusa 0 x 5 Gorilada</Text>
+            <Text style={styles.resultsText}>Rato Louco 0 x 0 Serpente</Text>
+            <Text style={styles.resultsText}>Águias 4 x 1 Rato Louco</Text>
+            <Text style={styles.resultsText}>Raposada 1 x 3 Gorilada</Text>
+            <Text style={styles.resultsText}>Castores 2 x 0 Medusa</Text>
+          </ScrollView>
+        </View>
+
         <View style={styles.row}>
-          <CardService iconName="sports-volleyball" iconSize={60} iconColor={customBlack} serviceName="Volei"/>
+          <CardService iconName="tennisball-outline" iconSize={60} iconColor={customBlack} serviceName="Volei"/>
           <CardService iconName="game-controller" iconSize={60} iconColor={customBlack} serviceName="Jogos "/>
         </View>
       </View>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('Barbers')}
-      >
-        <Text style={styles.buttonText}>AGENDAR</Text>
-      </TouchableOpacity>
+      
     </View>
   );
 };

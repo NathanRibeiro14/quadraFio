@@ -17,30 +17,37 @@ const BottomTabsNavigator = () => {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ color, size }) => {
           let iconName;
-
-          if (route.name === 'HomeScreen') {
-            iconName = 'home';
-          } else if (route.name === 'Barbers') {
-            iconName = 'storefront';
-          } else if (route.name === 'SchedulingClients') {
-            iconName = 'calendar';
-          } else if (route.name === 'Profile') {
-            iconName = 'person';
-          }
-
+          if (route.name === 'HomeScreen') iconName = 'home';
+          else if (route.name === 'Atletica') iconName = 'table';
+          else if (route.name === 'SchedulingClients') iconName = 'calendar';
+          else if (route.name === 'Profile') iconName = 'person';
           return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: '#353535',
+        tabBarActiveTintColor: '  #000000ff',
         tabBarInactiveTintColor: '#EFEFD0',
-        tabBarStyle: { backgroundColor: '#38761d' },
+        tabBarStyle: { backgroundColor: '#202020ff' },
+
+        headerShown: true,
+        headerTransparent: true,
+        headerTitle: '',
+        headerShadowVisible: false,
+        headerTintColor: '#FFF',
       })}
     >
+
       <Tab.Screen
         name='HomeScreen'
         component={HomeScreen}
-        options={{ headerShown: false, title: 'Início' }} />
+        options={{ 
+          headerShown: true,            // Habilita o header
+          headerTransparent: true,      // Deixa transparente
+          headerTitle: '',              // Remove título padrão
+          headerShadowVisible: false,   // Remove a linha de sombra
+          title: 'Início',              // Se quiser, pode deixar o título visível
+          headerTintColor: '#FFF',  
+        }} />
       <Tab.Screen
-        name='Barbers'
+        name='Atleticas'
         component={BarbersScreen}
         options={{ headerShown: false, title: 'Atléticas' }} />
       <Tab.Screen

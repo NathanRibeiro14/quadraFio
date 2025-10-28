@@ -11,18 +11,18 @@ const SearchBar = ({ onSearch }) => {
     }
   };
 
-  return (
-    <View style={styles.container}>
-      <Ionicons name="search" size={20} color="#aaa" style={styles.icon} />
-      <TextInput
-        style={styles.input}
-        placeholder="Buscar atlética..."
-        value={query}
-        onChangeText={setQuery}
-      />
-      <Button title="Buscar" onPress={handleSearch} />
-    </View>
-  );
+  //return (
+    //<View style={styles.container}>
+      //<Ionicons name="search" size={20} color="#aaa" style={styles.icon} />
+      //<TextInput
+        //style={styles.input}
+        //placeholder="Buscar atlética..."
+        //value={query}
+        //onChangeText={setQuery}
+      ///>
+      //<Button title="Buscar" onPress={handleSearch} />
+    //</View>
+  //);
 };
 
 const styles = StyleSheet.create({

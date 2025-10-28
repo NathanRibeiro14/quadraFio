@@ -7,20 +7,24 @@ import BarberShopCard from './components/BarberShopCard';
 import InfoCard from './components/InfoCard';
 
 //imgtest
-import barberimg from '../../assets/gorilada.jpeg'
-import barberimg2 from '../../assets/medusa.jpeg'
-import barberimg3 from '../../assets/forasteiros.jpeg'
-import barberimg4 from '../../assets/aguias.jpeg'
-import barberimg5 from '../../assets/raposada.jpg'
-import barberimg6 from '../../assets/castores.jpeg'
+import gorilada from '../../assets/gorilada.jpeg'
+import medusa from '../../assets/medusa.jpeg'
+import forasteiros from '../../assets/forasteiros.jpeg'
+import aguias from '../../assets/aguias.jpeg'
+import raposada from '../../assets/raposada.jpg'
+import castores from '../../assets/castores.jpeg'
+import rato from '../../assets/rato.jpeg'
+import serpente from '../../assets/serpente.jpeg'
 
 const barberShops = [
-  { id: '1', name: 'Gorilada', rating: 4.0, distance: '0.6 Vitória', image: barberimg },
-  { id: '2', name: 'Medusa', rating: 4.0, distance: '0.9 Vitória', image: barberimg2 },
-  { id: '3', name: 'Forasteiros', rating: 3.0, distance: '0.4 Vitória', image: barberimg3},
-  { id: '4', name: 'Aguias', rating: 6.0, distance: '0.5 Vitória', image: barberimg4},
-  { id: '5', name: 'Raposada', rating: 3.0, distance: '0.6 Vitória', image: barberimg5},
-  { id: '6', name: 'Castores', rating: 6.0, distance: '0.3 Vitória', image: barberimg6},
+  { id: '1', name: 'Gorilada', rating: 4.0, distance: '0.9 Vitória', image: gorilada },
+  { id: '2', name: 'Medusa', rating: 5.0, distance: '0.3 Vitória', image: medusa },
+  { id: '3', name: 'Forasteiros', rating: 3.0, distance: '0.4 Vitória', image: forasteiros},
+  { id: '4', name: 'Aguias', rating: 6.0, distance: '0.7 Vitória', image: aguias},
+  { id: '5', name: 'Raposada', rating: 3.0, distance: '0.8 Vitória', image: raposada},
+  { id: '6', name: 'Castores', rating: 5.0, distance: '0.6 Vitória', image: castores},
+  { id: '7', name: 'Rato', rating: 6.0, distance: '0.4 Vitória', image: rato},
+  { id: '8', name: 'Serpente', rating: 4.0, distance: '0.4 Vitória', image: serpente},
 ]
 
 const BarbersScreen = ({ navigation }) => {
