@@ -1,10 +1,9 @@
-import { Button, StyleSheet } from "react-native";
-
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
     paddingTop: 50,
-    backgroundColor: '#353535',
+    backgroundColor: '#EAF6FF', // Fundo azul claro
     padding: 15,
     flex: 1,
     alignItems: 'center',
@@ -13,11 +12,11 @@ const styles = StyleSheet.create({
     fontSize: 40,
     fontWeight: 'bold',
     marginBottom: 15,
-    color: '#FFF'
+    color: '#1E3A5F',
   },
   texts: {
     fontSize: 20,
-    color: '#FFF'
+    color: '#5A7CA4',
   },
   cardsContainer: {
     flex: 1,
@@ -30,51 +29,68 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: '#b5e550',  // Cor de fundo do botão
-    paddingVertical: 10,         // Espaçamento vertical
-    paddingHorizontal: 20,       // Espaçamento horizontal
-    borderRadius: 5,             // Bordas arredondadas
-    alignItems: 'center',        // Centraliza o texto horizontalmente
-    justifyContent: 'center',    // Centraliza o texto verticalmente
-    marginVertical: 10,          // Margem vertical para separar do conteúdo
+    backgroundColor: '#b5e550',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 10,
   },
   buttonText: {
-    color: '#fff',               // Cor do texto
-    fontSize: 16,                // Tamanho da fonte
-    fontWeight: 'bold',          // Peso da fonte
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
-
-
   resultsContainer: {
-    backgroundColor: '#474747ff',
-    borderRadius: 15,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 8,
     paddingVertical: 15,
     paddingHorizontal: 20,
     marginVertical: 15,
     alignSelf: 'center',
-    width: '55%',
-    maxHeight: 200,
+    width: '65%',
+    maxHeight: 250,
     justifyContent: 'center',
     alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 4,
+    elevation: 3,
   },
   resultsTitle: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#1E3A5F',
     marginBottom: 12,
     textAlign: 'center',
   },
   resultsText: {
-    fontSize: 18,         // 🔸 fonte um pouco maior
-    color: '#fff',        // 🔸 cor branca
-    textAlign: 'center',  // 🔸 centralizado no meio
-    marginVertical: 4,    // 🔸 espaçamento entre as linhas
-    alignSelf: 'center',  // 🔸 garante que o texto não grude à esquerda
+    fontSize: 18,
+    color: '#5A7CA4',
+    textAlign: 'center',
+    marginVertical: 4,
+    alignSelf: 'center',
   },
 
-
-  
-
+  // 🔹 Novo estilo para os ícones na parte inferior do placar
+  iconsRowBottom: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    marginTop: 20,
+    paddingVertical: 12,
+    backgroundColor: '#EAF6FF',
+    borderRadius: 10,
+    width: '90%',
+    alignSelf: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
 });
 
 export default styles;

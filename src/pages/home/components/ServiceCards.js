@@ -19,9 +19,10 @@ export default CardService;
 
 const styles = StyleSheet.create({
     card: {
+      color: '#1E3A5F',
       width: 100,        // Definindo o tamanho quadrado do card
       height: 100,
-      backgroundColor: '#f0f0f0',  // Cor de fundo do card
+      backgroundColor: '#FFF',  // Cor de fundo do card
       justifyContent: 'center',    // Centralizando o conteúdo no eixo vertical
       alignItems: 'center',        // Centralizando o conteúdo no eixo horizontal
       borderRadius: 10,            // Bordas arredondadas
